@@ -25,7 +25,7 @@ resource "aws_instance" "blog" {
   }
 
   resource "aws_ec2_tag" "example" {
-  resource_id = aws_instance.blog
+  resource_id = aws_instance.blog.tags
   key         = "creator"
   value       = "artur.sirota@netapp.com"
 }
