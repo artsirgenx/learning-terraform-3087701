@@ -21,11 +21,13 @@ resource "aws_instance" "blog" {
   tags = {
     Name    = "HelloWorld"
     Creator = "artur.sirota@netapp.com"
+    creator = "artur.sirota@netapp.com"
   }
-  }
+   volume_tags = {
+    Name    = "HelloWorld"
+    Creator = "artur.sirota@netapp.com"
+        Creator = "artur.sirota@netapp.com"
+        creator = "artur.sirota@netapp.com"
 
-  resource "aws_ec2_tag" "example" {
-  resource_id = aws_instance.blog.tags
-  key         = "creator"
-  value       = "artur.sirota@netapp.com"
-}
+  }
+  }

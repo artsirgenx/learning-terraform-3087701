@@ -11,6 +11,8 @@ provider "aws" {
   default_tags {
     tags = {
       creator = "Artur.Sirota@netapp.com"
+      Creator = "Artur.Sirota@netapp.com"
+      Name    = "artsirota"    
     }
   }
 }
