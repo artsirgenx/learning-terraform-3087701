@@ -12,4 +12,5 @@ provider "aws" {
     tags = {
       creator = "Artur.Sirota@netapp.com
     }
+  }
 }
