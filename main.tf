@@ -22,12 +22,10 @@ resource "aws_instance" "blog" {
     Name    = "HelloWorld"
     Creator = "artur.sirota@netapp.com"
   }
+  }
 
-resource "aws_ec2_tag" "example" {
+  resource "aws_ec2_tag" "example" {
   resource_id = aws_instance.blog
   key         = "creator"
   value       = "artur.sirota@netapp.com"
-}
-
-
 }
