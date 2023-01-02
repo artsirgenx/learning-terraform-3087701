@@ -21,13 +21,11 @@ resource "aws_instance" "blog" {
   tags = {
     Name    = "HelloWorld"
     Creator = "artur"
-    # creator = "artur.sirota@netapp.com"
   }
+  
    volume_tags = {
     Name    = "HelloWorld"
     Creator = "artur.sirota@netapp.com"
-        # Creator = "artur"
-        # creator = "artur.sirota@netapp.com"
 
-  }
+    }
   }
